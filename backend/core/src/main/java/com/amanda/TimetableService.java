@@ -1,6 +1,10 @@
 package com.amanda;
 
 import io.vertx.core.AbstractVerticle;
+import io.vertx.ext.web.Router;
+import io.vertx.ext.web.RoutingContext;
+import org.json.simple.JsonObject;
+
 
 public class TimetableService extends AbstractVerticle {
 
@@ -14,7 +18,8 @@ public class TimetableService extends AbstractVerticle {
             .listen(8080);
     }
 
-    private void ping(final RoutingContext){
-        rc.response().end("Amanda is a G")
+    private void ping(final RoutingContext rc) {
+        Student s = new Student ("Amanda Suzzanne", "SCCI/01140/2018");
+        rc.response().end(JsonObject.mapFrom(s).encode());
     }
 }
