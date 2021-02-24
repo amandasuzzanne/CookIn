@@ -4,7 +4,7 @@ import io.vertx.core.AbstractVerticle;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.RoutingContext;
 
-public class CookinService extends AbstractVerticle {
+public class CookInService extends AbstractVerticle {
 
     @Override
     public void start() {
