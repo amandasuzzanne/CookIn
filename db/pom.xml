@@ -1,8 +1,8 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.amanda.code.cookin</groupId>
-    <artifactId>cookin</artifactId>
+    <groupId>com.amanda</groupId>
+    <artifactId>db</artifactId>
     <version>1.0.0</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -10,8 +10,8 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <!-- vert.x properties -->
-        <vertx.version>4.0.0</vertx.version>
-        <vertx.verticle>com.amanda.code.CookInService</vertx.verticle>
+        <vertx.version>3.9.5</vertx.version>
+        <vertx.verticle>com.amanda.DbService</vertx.verticle>
         <!-- Maven plugins -->
         <vertx-maven-plugin.version>1.0.9</vertx-maven-plugin.version>
     </properties>
@@ -33,17 +33,11 @@
         </dependency>
         <dependency>
             <groupId>io.vertx</groupId>
-            <artifactId>vertx-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>1.7.30</version>
+            <artifactId>vertx-mongo-client</artifactId>
         </dependency>
         <dependency>
             <groupId>io.vertx</groupId>
-            <artifactId>vertx-mongo-client</artifactId>
-            <version>4.0.0</version>
+            <artifactId>vertx-web</artifactId>
         </dependency>
     </dependencies>
     <build>
