@@ -43,7 +43,6 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-mongo-client</artifactId>
-            <version>4.0.0</version>
         </dependency>
     </dependencies>
     <build>
